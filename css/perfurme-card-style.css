@@ -30,10 +30,10 @@
       margin: 1.5rem 0;
       line-height: 1.5; }
     .perfume-card .txt-content .prices {
-      color: #3c8067;
       display: flex;
       align-items: center;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      color: #3c8067; }
       .perfume-card .txt-content .prices .actual {
         margin-right: 2rem;
         font-size: 2.5rem;
@@ -45,15 +45,23 @@
       justify-content: center;
       align-items: center;
       padding: 1rem 1rem;
-      border-radius: 10px;
-      background-color: #3c8067;
+      margin: -3px;
+      border: 3px transparent solid;
+      box-shadow: 0px 0px 0px rgba(28, 35, 43, 0);
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
       color: white;
-      transition: background-color 0.5s; }
+      border-radius: 10px;
+      background-color: #3c8067;
+      transition: background-color 0.5s, border 0.5s, box-shadow 0.5s; }
       .perfume-card .txt-content .button:hover {
         transition: background-color 0.5s;
         background-color: #214538; }
+      .perfume-card .txt-content .button:focus {
+        outline: none;
+        transition: border 0.5s, box-shadow 0.5s;
+        border: 3px #1c232b solid;
+        box-shadow: 2px 2px 6px #1c232b; }
       .perfume-card .txt-content .button img {
         margin-right: 0.8rem; }
 
@@ -65,5 +73,3 @@
       width: 50%; }
     .perfume-card .txt-content {
       width: 50%; } }
-
-/*# sourceMappingURL=perfurme-card-style.css.map */
