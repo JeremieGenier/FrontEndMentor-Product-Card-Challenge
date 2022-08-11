@@ -1,0 +1,45 @@
+/* Global css effects */
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #6c7289; }
+
+*, *::after, *::before {
+  box-sizing: border-box; }
+
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit; }
+
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column; }
+
+.product-preview {
+  min-width: calc(375px - 2rem);
+  margin: 2rem 1rem;
+  padding: 2rem 1rem;
+  background-color: #f2ebe3;
+  box-shadow: 1px 3px 20px rgba(33, 69, 56, 0.2);
+  transition: margin 0.5s, padding 0.5s; }
+
+footer {
+  width: 100%;
+  padding: 1em 1em;
+  background-color: #1c232b;
+  color: white;
+  text-align: center;
+  margin-top: auto; }
+  footer .attribution a {
+    color: #3c8067; }
+
+@media screen and (min-width: 768px) {
+  .product-preview {
+    margin: 4rem 2rem; } }
+@media screen and (min-width: 992px) {
+  .product-preview {
+    padding: 8rem 2rem; } }

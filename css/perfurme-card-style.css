@@ -1,0 +1,69 @@
+.perfume-card {
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden; }
+  .perfume-card p {
+    font-size: 14px; }
+  .perfume-card .image img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .perfume-card .txt-content {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .perfume-card .txt-content header .category {
+      margin-bottom: 1rem;
+      letter-spacing: 4px;
+      text-transform: uppercase; }
+    .perfume-card .txt-content header h1 {
+      font-size: 2.5em;
+      font-family: "Fraunces", serif;
+      color: #1c232b;
+      font-weight: 700; }
+    .perfume-card .txt-content .description {
+      margin: 1.5rem 0;
+      line-height: 1.5; }
+    .perfume-card .txt-content .prices {
+      color: #3c8067;
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem; }
+      .perfume-card .txt-content .prices .actual {
+        margin-right: 2rem;
+        font-size: 2.5rem;
+        font-family: "Fraunces", serif; }
+      .perfume-card .txt-content .prices .old {
+        color: #6c7289; }
+    .perfume-card .txt-content .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 1rem;
+      border-radius: 10px;
+      background-color: #3c8067;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      color: white;
+      transition: background-color 0.5s; }
+      .perfume-card .txt-content .button:hover {
+        transition: background-color 0.5s;
+        background-color: #214538; }
+      .perfume-card .txt-content .button img {
+        margin-right: 0.8rem; }
+
+@media screen and (min-width: 768px) {
+  .perfume-card {
+    display: flex;
+    max-width: 700px; }
+    .perfume-card .image {
+      width: 50%; }
+    .perfume-card .txt-content {
+      width: 50%; } }
+
+/*# sourceMappingURL=perfurme-card-style.css.map */

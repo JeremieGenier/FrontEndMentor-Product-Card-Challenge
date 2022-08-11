@@ -1,0 +1,115 @@
+@import 'partials/variables';
+
+// Breakpoints from : Bootstrap v5
+// https://getbootstrap.com/docs/5.0/layout/breakpoints/
+// Avoiding the use of bootstrap on purpose to practice the use of breakpoints
+
+// X-Small	            None	<576px
+// Small	            sm	    ≥576px
+// Medium               md	    ≥768px
+// Large	            lg	    ≥992px
+// Extra large          xl	    ≥1200px
+// Extra extra large    xxl	    ≥1400px
+
+.perfume-card {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+
+    background-color: $white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    p {
+        font-size: 14px;
+    }
+
+    & .image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .txt-content {
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        & header {
+            & .category {
+                margin-bottom: 1rem;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+            }
+            & h1 {
+                font-size: 2.5em;
+                font-family: $fraunces;
+                color: hsl(212, 21%, 14%);
+                font-weight: 700;
+            }
+        }
+
+        & .description {
+            margin: 1.5rem 0;
+            line-height: 1.5;
+        }
+
+        & .prices {
+            color: $dark-cyan;
+            display: flex;
+            align-items: center;
+
+            margin-bottom: 2rem;
+
+            & .actual {
+                margin-right: 2rem;
+                font-size: 2.5rem;
+                font-family: $fraunces;
+            }
+            & .old {
+                color: $dark-grayish-blue;
+            }
+        }
+
+        & .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 1rem;
+
+            border-radius: 10px;
+            background-color: $dark-cyan;
+
+            font-family: $montserrat;
+            font-weight: 700;
+            color: $white;
+
+            transition: background-color 0.5s;
+            &:hover {
+                transition: background-color 0.5s;
+                background-color: $very-dark-cyan;
+            }
+
+            & img {
+                margin-right: 0.8rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .perfume-card {
+        display: flex;
+        max-width: 700px;
+
+        & .image {
+            width: 50%;
+        }
+        & .txt-content {
+            width: 50%;
+        }
+    }
+}
+
+
