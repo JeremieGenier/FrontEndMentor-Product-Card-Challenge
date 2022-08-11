@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-layout-using-flexbox-scss-koala-scss-and-tool-pureref-pav9nhDNqC
 - Live Site URL: https://jeremiegenier.github.io/FrontEndMentor-Product-Card-Challenge/
 
 ## My process
